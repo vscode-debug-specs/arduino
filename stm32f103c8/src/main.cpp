@@ -1,21 +1,32 @@
 #include <Arduino.h>
 
-int num = 0;
+const int Y_PIN = PA1;
+const int LED_PIN = PB13;
 
 void setup()
 {
-    pinMode(PB13, OUTPUT);
+    pinMode(Y_PIN, INPUT);
+    pinMode(LED_PIN, OUTPUT);
     Serial.begin(9600);
 }
 
 void loop()
 {
-    digitalWrite(PB13, HIGH);
-    delay(1000);
-    digitalWrite(PB13, LOW);
-    delay(200);
+    int y;
+
+    y = analogRead(Y_PIN);
 
     Serial.print("Y:");
-    Serial.println(num);
-    num++;
+    Serial.println(y);
+
+    if (y < 300)
+    {
+        digitalWrite(LED_PIN, 0);
+    }
+    else
+    {
+        digitalWrite(LED_PIN, 1);
+    }
+
+    delay(100);
 }
