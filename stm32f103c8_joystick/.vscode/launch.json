@@ -6,31 +6,31 @@
 // Configuration: https://docs.platformio.org/page/projectconf/section_env_debug.html
 
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "platformio-debug",
-      "request": "launch",
-      "name": "PIO Debug",
-      "executable": "${workspaceFolder}/.pio/build/genericSTM32F103C8/firmware.elf",
-      "projectEnvName": "genericSTM32F103C8",
-      "toolchainBinDir": "${env:HOME}/.platformio/packages/toolchain-gccarmnoneeabi/bin",
-      "internalConsoleOptions": "openOnSessionStart",
-      "svdPath": "${env:HOME}/.platformio/platforms/ststm32/misc/svd/STM32F103xx.svd",
-      "preLaunchTask": {
-        "type": "PlatformIO",
-        "task": "Pre-Debug"
-      }
-    },
-    {
-      "type": "platformio-debug",
-      "request": "launch",
-      "name": "PIO Debug (skip Pre-Debug)",
-      "executable": "${workspaceFolder}/.pio/build/genericSTM32F103C8/firmware.elf",
-      "projectEnvName": "genericSTM32F103C8",
-      "toolchainBinDir": "${env:HOME}/.platformio/packages/toolchain-gccarmnoneeabi/bin",
-      "internalConsoleOptions": "openOnSessionStart",
-      "svdPath": "${env:HOME}/.platformio/platforms/ststm32/misc/svd/STM32F103xx.svd"
-    }
-  ]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug",
+            "executable": "/home/nnyn/ghq/github.com/vscode-debug-specs/arduino/stm32f103c8_joystick/.pio/build/genericSTM32F103C8/firmware.elf",
+            "projectEnvName": "genericSTM32F103C8",
+            "toolchainBinDir": "/home/nnyn/.platformio/packages/toolchain-gccarmnoneeabi/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "/home/nnyn/.platformio/platforms/ststm32/misc/svd/STM32F103xx.svd",
+            "preLaunchTask": {
+                "type": "PlatformIO",
+                "task": "Pre-Debug"
+            }
+        },
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug (skip Pre-Debug)",
+            "executable": "/home/nnyn/ghq/github.com/vscode-debug-specs/arduino/stm32f103c8_joystick/.pio/build/genericSTM32F103C8/firmware.elf",
+            "projectEnvName": "genericSTM32F103C8",
+            "toolchainBinDir": "/home/nnyn/.platformio/packages/toolchain-gccarmnoneeabi/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "/home/nnyn/.platformio/platforms/ststm32/misc/svd/STM32F103xx.svd"
+        }
+    ]
 }

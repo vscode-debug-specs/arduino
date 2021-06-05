@@ -21,11 +21,11 @@ void loop()
 
     if (y < 300)
     {
-        digitalWrite(LED_PIN, 0);
+        digitalWrite(LED_PIN, HIGH);
     }
     else
     {
-        digitalWrite(LED_PIN, 1);
+        digitalWrite(LED_PIN, LOW);
     }
 
     delay(100);
