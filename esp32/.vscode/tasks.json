@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "launch openocd",
+      "command": "${env:HOME}/libraries/espressif/openocd-esp32/bin/openocd",
+      "type": "shell",
+      "args": [
+        "-s",
+        "${env:HOME}/libraries/espressif/openocd-esp32/share/openocd/scripts/",
+        "-f",
+        "${workspaceFolder}/openocd_script.cfg"
+      ],
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "reveal": "always"
+      },
+      "group": "none"
+    }
+  ]
+}
