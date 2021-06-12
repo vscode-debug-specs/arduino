@@ -13,9 +13,13 @@
       "servertype": "openocd",
       "gdbPath": "gdb-multiarch",
       "device": "RP2040",
+      "serverpath": "/home/nnyn/pico/openocd/src/openocd",
+      "searchDir": [
+        "/home/nnyn/pico/openocd/tcl",
+      ],
       "configFiles": [
-        "interface/picoprobe.cfg",
-        "target/rp2040.cfg"
+        "/home/nnyn/pico/openocd/tcl/interface/picoprobe.cfg",
+        "/home/nnyn/pico/openocd/tcl/target/rp2040.cfg"
         ],
       "svdFile": "${env:PICO_SDK_PATH}/src/rp2040/hardware_regs/rp2040.svd",
       "runToMain": true,
