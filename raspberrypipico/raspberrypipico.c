@@ -26,7 +26,6 @@ int main()
         sleep_ms(500);
         printf("num=%d\n", num);
         num++;
-        num++;
     }
 
     return 0;
