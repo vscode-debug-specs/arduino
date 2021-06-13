@@ -6,29 +6,29 @@
 // Configuration: https://docs.platformio.org/page/projectconf/section_env_debug.html
 
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "platformio-debug",
-      "request": "launch",
-      "name": "PIO Debug",
-      "executable": "${workspaceFolder}/.pio/build/esp32dev/firmware.elf",
-      "projectEnvName": "esp32dev",
-      "toolchainBinDir": "${env:HOME}/.platformio/packages/toolchain-xtensa32@2.50200.97/bin",
-      "internalConsoleOptions": "openOnSessionStart",
-      "preLaunchTask": {
-        "type": "PlatformIO",
-        "task": "Pre-Debug"
-      }
-    },
-    {
-      "type": "platformio-debug",
-      "request": "launch",
-      "name": "PIO Debug (skip Pre-Debug)",
-      "executable": "${workspaceFolder}/.pio/build/esp32dev/firmware.elf",
-      "projectEnvName": "esp32dev",
-      "toolchainBinDir": "${env:HOME}/.platformio/packages/toolchain-xtensa32@2.50200.97/bin",
-      "internalConsoleOptions": "openOnSessionStart"
-    }
-  ]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug",
+            "executable": "/home/nnyn/ghq/github.com/vscode-debug-specs/arduino/esp32_platformio/.pio/build/esp32dev/firmware.elf",
+            "projectEnvName": "esp32dev",
+            "toolchainBinDir": "/home/nnyn/.platformio/packages/toolchain-xtensa32@2.50200.97/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "preLaunchTask": {
+                "type": "PlatformIO",
+                "task": "Pre-Debug"
+            }
+        },
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug (skip Pre-Debug)",
+            "executable": "/home/nnyn/ghq/github.com/vscode-debug-specs/arduino/esp32_platformio/.pio/build/esp32dev/firmware.elf",
+            "projectEnvName": "esp32dev",
+            "toolchainBinDir": "/home/nnyn/.platformio/packages/toolchain-xtensa32@2.50200.97/bin",
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
 }
